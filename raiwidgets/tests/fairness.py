@@ -52,11 +52,11 @@ unmitigated_predictor = LogisticRegression(
 unmitigated_predictor.fit(X_train, Y_train)
 
 
-FairnessDashboard(sensitive_features=A_test, sensitive_feature_names=['sex'],
+FairnessDashboard(sensitive_features=A_test,
                   y_true=Y_test,
                   y_pred={
                       "unmitigated": unmitigated_predictor.predict(X_test)
-})
+                  })
 
 
 input("Press Enter to continue...")
