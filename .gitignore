@@ -65,10 +65,6 @@ apps/*-e2e/debug.log
 **/coverage.xml
 **/test-results.xml
 
-# notebook artifacts
-/notebooks/*.csv
-/notebooks/*.zip
-
 # docs
 docs/build/*
 */.mypy_cache/*
